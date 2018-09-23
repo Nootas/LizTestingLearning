@@ -7,7 +7,7 @@ ASCII与char的转换
 '''
 import csv
 
-TaeCSV = open('TaeCSV.py','w',encoding='utf-8',newline='') #首先创建一个文件
+TaeCSV = open('TaeCSV.csv','w',encoding='utf-8',newline='') #首先创建一个文件
 writer = csv.writer(TaeCSV) #定义一只笔，写入文件对象中
 writer.writerow(['Archives'])#写入一行,以列表的方式
 writer.writerow(['name','rank'])
