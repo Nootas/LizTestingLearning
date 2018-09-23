@@ -1,6 +1,5 @@
-# hello-world
-this is I go with the guides
-Hi
-I'm new to github...
-it is a terrible night I suffered in mind 
-so I want to learn something new to soft my huge pain...nothing more
+# emmm
+I am learning python 
+I am a new starter 
+在这里上传一些自己的小练习吧。
+
