@@ -1,5 +1,7 @@
 '''
-写一个CSV文件
+练习写csv文件。
+注意命名的时候不能命名成csv.py，不然运行时会与python自带的csv模块冲突。
+int与string的转换
 '''
 import csv
 
