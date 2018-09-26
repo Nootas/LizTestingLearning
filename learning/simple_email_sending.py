@@ -31,6 +31,7 @@ class smtplib.SMTP(host='',port=0,local_hostname=None,[timeout]source_address=No
 '''
 serverport = 25 #SMTP default port is 25
 server = smtplib.SMTP(mysmtpserver,serverport)
+server.starttls() # sending email in a safe way 
 server.set_debuglevel(1) # 1 for debug msg shown, 2 for level results in these messages being timestamped
 server.login(myfromaddr,mypassword) 
 server.sendmail(myfromaddr,[mytoaddr],mymsg.as_string())#mytoaddr is in list cause you may send email to a group
