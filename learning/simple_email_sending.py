@@ -4,7 +4,7 @@ MIMEText is used to write email msg
 smtplib is used to send email
 getpass is a safeway to input pass word
 '''
-from email.MIME.text import MIMEText
+from email.mime.text import MIMEText
 import smtplib
 import getpass
 
@@ -16,7 +16,7 @@ given by email web instead of your login pw.
 If not, may raise 535 error
 '''
 myfromaddr  = input("From: ") #input email fromaddress
-mypassword  = getpass("Password: ")#input email password in a safe way
+mypassword  = getpass.getpass("Password: ")#input email password in a safe way
 mytoaddr    = input("To: ")#input email toaddress
 
 mysmtpserver = "smtp.qq.com" #use qq email here
