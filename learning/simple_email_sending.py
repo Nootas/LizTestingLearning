@@ -1,10 +1,12 @@
 '''
 python email sending practice
 MIMEText is used to write email msg
+email.utils.localtime is uses to get local time
 smtplib is used to send email
 getpass is a safeway to input pass word
 '''
 from email.mime.text import MIMEText
+from email.utils import localtime
 import smtplib
 import getpass
 
@@ -23,7 +25,8 @@ mysmtpserver = "smtp.qq.com" #use qq email here
 
 #official doc: MIMEText(_text,_subtype='plain',charset=None,*,policy=compat32)
 mymsgcontent = "hello, through the Great Wall, we'll see a bigger world.;->"
-mymsg = MIMEText(mymsgcontent,'plain','utf-8')
+sendtime="\nSEND TIME: " + localtime().strftime("%Y-%m-%d %H:%M:%S")
+mymsg = MIMEText(mymsgcontent+sendtime,'plain','utf-8')
 
 '''
 official doc:
