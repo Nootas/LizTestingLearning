@@ -39,9 +39,10 @@ server.quit()
 
 '''
 SMTP support with statement, in with statement, no need to write quit(),cause quit() is automatically used in with statement
-with SMTP(smtp_server,25) as server:
+with SMTP(mysmtpserver,serverport) as server:
+    server.starttls()
     server.set_debuglevel(1)
-    server.login(from_addr,password)
-    server.sendmail(from_addr,[to_addr],msg.as_string())
+    server.login(myfromaddr,mypassword)
+    server.sendmail(myfromaddr,[mytoaddr],mymsg.as_string())
 '''
 
