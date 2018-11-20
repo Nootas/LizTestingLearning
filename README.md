@@ -1,4 +1,6 @@
-# 代码练习仓
+# Tae's Python Practice
 
-在这里上传一些自己的小练习吧。
+RobotFramework Learning
+Locust Learning
+Python Learning
 
