@@ -1,0 +1,3 @@
+On Mac
+python3 -m pip install robotframework
+pypthon3 -m pip install robotframework-selenium2library
