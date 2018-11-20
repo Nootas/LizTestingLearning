@@ -1,3 +1,9 @@
 On Mac
 python3 -m pip install robotframework
 pypthon3 -m pip install robotframework-selenium2library
+
+I'm using 
+Chrome v70
+ChromeDriver v2.44(put it in python3 path)
+Atom + Terminal
+
