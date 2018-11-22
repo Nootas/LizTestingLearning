@@ -31,14 +31,14 @@ Go To Login Page
 
 Input Username
     [Arguments]    ${username}
-    Input Text    login_field    ${username}
+    Input Text    id:login_field    ${username}
 
 Input Password
     [Arguments]    ${password}
-    Input Text    password    ${password}
+    Input Text    id:password    ${password}
 
 Submit LogINFO
-    Click Button    commit
+    Click Button    name:commit
 
 Index Page Should Open
     Location Should Be    ${INDEX URL}
@@ -46,3 +46,4 @@ Index Page Should Open
 
 Error Page Should Open
     Location Should Be    ${ERROR URL}
+    Element Should Contain   id:js-flash-container    Incorrect username or password.
