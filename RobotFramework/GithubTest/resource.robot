@@ -46,4 +46,4 @@ Index Page Should Open
 
 Error Page Should Open
     Location Should Be    ${ERROR URL}
-    Element Should Contain   id:js-flash-container    Incorrect username or password.
+    Element Should Contain   id : js-flash-container    Incorrect username or password.
