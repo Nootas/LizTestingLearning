@@ -1,1 +1,2 @@
-
+Execute
+$ robot CreateAWeibo.robot
