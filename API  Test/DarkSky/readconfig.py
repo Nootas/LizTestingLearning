@@ -30,5 +30,5 @@ class ReadConfig:
     def get_location(self,*args):
         latitude = self.config.get('LOCATION',args[0])
         longtitude = self.config.get('LOCATION',args[1])
-        locationdict = {'latitude':latitude,'longtitude':longtitude}
+        locationdict = {'latitude':float(latitude),'longtitude':float(longtitude)}
         return locationdict
