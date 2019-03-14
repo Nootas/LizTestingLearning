@@ -1,4 +1,7 @@
 '''
+不用这个库了，我晚上用requests + requests-html 重新写一个图片爬虫
+'''
+'''
 This practice is used to:
 download pictures on web.
 '''
@@ -29,7 +32,4 @@ for img in imgtag:
     imgfile = request.urlretrieve(imgurl, filename='眠狼%d.jpg'%i)
     i = i+1
     
-'''
-待完善，这里的图片照的不准确，还下了一张表情。
-需要findAll做修正
-'''
+
